@@ -24,10 +24,7 @@ INPUT_FILE = os.path.join(PARENT_DIR, SOURCE_OF_ORIGIN)
 
 # checkbox detection hyper_parameters
 
-CD_IMG_WIDTH = 50
-CD_IMG_HEIGHT = 50
-
-CD_MODEL_PATH = os.path.join(OUTPUT_DIR, "model/checkbox_state_recognition_model_v1.0.h5")
+CD_MODEL_PATH = os.path.join(OUTPUT_DIR, "model/checkbox_detection_model_v1.0.pth")
 
 # checkbox recognition hyper_parameters
 

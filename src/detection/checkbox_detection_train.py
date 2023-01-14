@@ -147,7 +147,11 @@ class CheckboxDetectionTrain:
             lossAvg.append(g)
             print("END EPOCH #{} avg: {}".format(epoch, total_loss / count))
 
+            torch.cuda.empty_cache()
+
         torch.save(model, self.model_name)
+
+        torch.cuda.empty_cache()
 
         return self.model_name
 

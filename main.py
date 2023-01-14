@@ -24,7 +24,7 @@ if __name__ == '__main__':
     file_size = get_file_size(INPUT_FILE)
     file_checksum = get_checksum(INPUT_FILE)
 
-    checkbox_detection = CheckboxDetectionTest(INPUT_FILE, CD_MODEL_PATH, OUTPUT_DIR)
+    checkbox_detection = CheckboxDetectionTest(INPUT_FILE, OUTPUT_DIR, CD_MODEL_PATH)
     detected_file = checkbox_detection.checkbox_detection()
 
     checkbox_state_recognition = CheckboxStateRecognition(detected_file, CR_MODEL_PATH, CR_IMG_WIDTH, CR_IMG_HEIGHT)

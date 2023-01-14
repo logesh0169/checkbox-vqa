@@ -1,8 +1,7 @@
-import os
-import warnings
-import keras
-import numpy as np
 
+import keras
+import warnings
+import numpy as np
 from keras.models import load_model
 from keras.applications.vgg16 import preprocess_input
 
