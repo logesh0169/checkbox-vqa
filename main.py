@@ -24,13 +24,13 @@ if __name__ == '__main__':
     file_size = get_file_size(INPUT_FILE)
     file_checksum = get_checksum(INPUT_FILE)
 
-    checkbox_detection = CheckboxDetectionTest(INPUT_FILE, OUTPUT_DIR, CD_MODEL_PATH)
+    checkbox_detection = CheckboxDetectionTest(INPUT_FILE, SOURCE_OF_TRUTH_DIR, CD_MODEL_PATH)
     detected_file = checkbox_detection.checkbox_detection()
 
     checkbox_state_recognition = CheckboxStateRecognition(detected_file, CR_MODEL_PATH, CR_IMG_WIDTH, CR_IMG_HEIGHT)
     checkbox_state = checkbox_state_recognition.checkbox_state_recognition()
 
-    printed_text_extraction = PrintedTextExtraction(INPUT_FILE)
+    printed_text_extraction = PrintedTextExtraction(INPUT_FILE, PRINTED_TEXT_DETECTION_LARGE_MODEL)
     extracted_printed_text = printed_text_extraction.printed_text_extraction()
 
     res['inputFilePath'] = INPUT_FILE
@@ -43,11 +43,4 @@ if __name__ == '__main__':
     res['extracted_printed_text'] = extracted_printed_text
 
     print(res)
-
     logger.info("CHECKBOX VQA END")
-
-
-
-
-
-

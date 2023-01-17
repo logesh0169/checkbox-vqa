@@ -29,6 +29,10 @@ class CheckboxStateRecognition:
         checkbox_state_model = load_model(self.model_path)
         classes = checkbox_state_model.predict(x_processed)
 
+        cf = ['{:f}'.format(item) for item in classes[0]]
+
+        print(cf)
+
         classes = classes.round()
 
         if classes[0][0] == 1:

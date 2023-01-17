@@ -31,7 +31,7 @@ BBOX_FILE = os.path.join(PARENT_DIR, BBOX_VALUE)
 MODEL_NAME = "checkbox_detection_model.pth"
 
 EPOCHS = 100
-BATCH_SIZE = 12
+BATCH_SIZE = 4
 
 
 class ImageDataset(Dataset):
