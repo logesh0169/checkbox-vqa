@@ -1,15 +1,7 @@
-2023-01-13 15:38:48,531 CHECKBOX VQA STARTED
-2023-01-13 15:38:48,926 AutoGraph could not transform <function Model.make_predict_function.<locals>.predict_function at 0x7fa091ab0ee0> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: module 'gast' has no attribute 'Constant'
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-2023-01-13 15:38:49,036 PRINTED TEXT EXTRACTION START
-2023-01-13 15:38:54,488 PRINTED TEXT EXTRACTION END
-2023-01-13 15:38:54,528 CHECKBOX VQA END
-t_function at 0x7fa091ab0ee0> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: module 'gast' has no attribute 'Constant'
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-[Fri, 13 Jan 2023 15:38:49] INFO [printed_text_extraction.py.printed_text_extraction:23] PRINTED TEXT EXTRACTION START
-[Fri, 13 Jan 2023 15:38:54] INFO [printed_text_extraction.py.printed_text_extraction:34] PRINTED TEXT EXTRACTION END
-[Fri, 13 Jan 2023 15:38:54] INFO [main.py.<module>:43] CHECKBOX VQA END
+2023-01-14 21:46:35,503 CHECKBOX VQA STARTED
+2023-01-14 21:46:38,686 PRINTED TEXT EXTRACTION START
+2023-01-14 21:46:52,747 PRINTED TEXT EXTRACTION END
+2023-01-14 21:46:52,772 CHECKBOX VQA END
+xt_extraction:24] PRINTED TEXT EXTRACTION START
+[Sat, 14 Jan 2023 21:46:52] INFO [printed_text_extraction.py.printed_text_extraction:39] PRINTED TEXT EXTRACTION END
+[Sat, 14 Jan 2023 21:46:52] INFO [main.py.<module>:46] CHECKBOX VQA END

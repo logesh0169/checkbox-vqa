@@ -3,7 +3,6 @@ import cv2
 import warnings
 import torch
 import torchvision
-import matplotlib.image as im
 
 from pathlib import Path
 
@@ -38,7 +37,7 @@ class CheckboxDetectionTest:
         # model.load_state_dict(torch.load(self.model_path))
         model.eval()
 
-        input_image = im.imread(self.input_file)
+        input_image = cv2.imread(self.input_file)
         input_img = torchvision.transforms.functional.to_tensor(input_image).to(device)
 
         checkbox_tensors = model([input_img])[0]["boxes"]

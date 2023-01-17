@@ -1,8 +1,7 @@
-import os
-import warnings
-import keras
-import numpy as np
 
+import keras
+import warnings
+import numpy as np
 from keras.models import load_model
 from keras.applications.vgg16 import preprocess_input
 
@@ -29,6 +28,10 @@ class CheckboxStateRecognition:
 
         checkbox_state_model = load_model(self.model_path)
         classes = checkbox_state_model.predict(x_processed)
+
+        cf = ['{:f}'.format(item) for item in classes[0]]
+
+        print(cf)
 
         classes = classes.round()
 

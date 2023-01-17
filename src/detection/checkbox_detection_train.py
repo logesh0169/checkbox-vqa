@@ -31,7 +31,7 @@ BBOX_FILE = os.path.join(PARENT_DIR, BBOX_VALUE)
 MODEL_NAME = "checkbox_detection_model.pth"
 
 EPOCHS = 100
-BATCH_SIZE = 12
+BATCH_SIZE = 4
 
 
 class ImageDataset(Dataset):
@@ -147,7 +147,11 @@ class CheckboxDetectionTrain:
             lossAvg.append(g)
             print("END EPOCH #{} avg: {}".format(epoch, total_loss / count))
 
+            torch.cuda.empty_cache()
+
         torch.save(model, self.model_name)
+
+        torch.cuda.empty_cache()
 
         return self.model_name
 
