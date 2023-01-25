@@ -10,10 +10,13 @@ from torchvision import transforms
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
 # parent directory
-PARENT_DIR = "/home/hwuser/Workspace/dev/prod-dev/checkbox-vqa/v1.0/source_of_origin/dataset/checkbox/detection/"
+
+# PARENT_DIR = "/home/logeshbabu/workspace/checkbox-vqa/source_of_origin/datasetv3.0/checkbox_with_text/detection/"
+PARENT_DIR = "/home/logeshbabu/workspace/checkbox-vqa/source_of_origin/datasetv3.0/checkbox/detection/"
 
 # output directory
-OUTPUT_DIR = "/home/hwuser/Workspace/dev/prod-dev/checkbox-vqa/v1.0/output/model/"
+# OUTPUT_DIR = "/home/logeshbabu/workspace/checkbox-vqa/source_of_origin/datasetv3.0/checkbox_with_text/detection/"
+OUTPUT_DIR = "/home/logeshbabu/workspace/checkbox-vqa/source_of_origin/datasetv3.0/checkbox/detection/"
 OUTPUT_DIR = os.path.join(PARENT_DIR, OUTPUT_DIR)
 
 # train directory
@@ -28,7 +31,7 @@ TEST_FILES = os.path.join(PARENT_DIR, TEST_DIR)
 BBOX_VALUE = "train.csv"
 BBOX_FILE = os.path.join(PARENT_DIR, BBOX_VALUE)
 
-MODEL_NAME = "checkbox_detection_model.pth"
+MODEL_NAME = "checkbox_detection_v3.0.pth"
 
 EPOCHS = 100
 BATCH_SIZE = 4

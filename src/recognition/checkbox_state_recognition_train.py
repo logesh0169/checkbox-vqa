@@ -118,14 +118,15 @@ class CheckboxStateRecognitionTrain:
 
 # config
 
-TRAIN_PATH = "/home/hwuser/Workspace/dev/prod-dev/checkbox-vqa/v1.0/source_of_origin/dataset/checkbox/recognition/vgg16/train/"
-TEST_PATH ="/home/hwuser/Workspace/dev/prod-dev/checkbox-vqa/v1.0/source_of_origin/dataset/checkbox/recognition/vgg16/val/"
-EPOCH = 50
+TRAIN_PATH = "/home/logeshbabu/workspace/checkbox-vqa/source_of_origin/datasetv3.0/checkbox/recognition/vgg16/train/"
+TEST_PATH = "/home/logeshbabu/workspace/checkbox-vqa/source_of_origin/datasetv3.0/checkbox/recognition/vgg16/val/"
+EPOCH = 80
 BATCH_SIZE = 24
 IMG_WIDTH = 50
 IMG_HEIGHT = 50
-MODEL_PATH = "/home/hwuser/Workspace/dev/prod-dev/checkbox-vqa/v1.0/output/model/"
-MODEL_NAME = "checkbox_state_recognition_model_v1.0.h5"
+
+MODEL_PATH = "/home/logeshbabu/workspace/checkbox-vqa/model/"
+MODEL_NAME = "checkbox_state_recognition_model_v3.0.h5"
 
 checkbox_state_recognition = CheckboxStateRecognitionTrain(TRAIN_PATH, TEST_PATH, EPOCH, BATCH_SIZE, IMG_WIDTH, IMG_HEIGHT, MODEL_PATH, MODEL_NAME)
 checkbox_state_recognition.checkbox_state_recognition()
