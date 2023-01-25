@@ -1,7 +1,17 @@
-2023-01-14 21:46:35,503 CHECKBOX VQA STARTED
-2023-01-14 21:46:38,686 PRINTED TEXT EXTRACTION START
-2023-01-14 21:46:52,747 PRINTED TEXT EXTRACTION END
-2023-01-14 21:46:52,772 CHECKBOX VQA END
-xt_extraction:24] PRINTED TEXT EXTRACTION START
-[Sat, 14 Jan 2023 21:46:52] INFO [printed_text_extraction.py.printed_text_extraction:39] PRINTED TEXT EXTRACTION END
-[Sat, 14 Jan 2023 21:46:52] INFO [main.py.<module>:46] CHECKBOX VQA END
+2023-01-25 20:46:01,228 CHECKBOX VQA STARTED
+2023-01-25 20:46:04,165 PRINTED TEXT EXTRACTION START
+2023-01-25 20:46:08,628 PRINTED TEXT EXTRACTION END
+2023-01-25 20:46:08,835 PRINTED TEXT EXTRACTION START
+2023-01-25 20:46:13,112 PRINTED TEXT EXTRACTION END
+2023-01-25 20:46:13,306 PRINTED TEXT EXTRACTION START
+2023-01-25 20:46:17,797 PRINTED TEXT EXTRACTION END
+2023-01-25 20:46:17,974 PRINTED TEXT EXTRACTION START
+2023-01-25 20:46:22,482 PRINTED TEXT EXTRACTION END
+2023-01-25 20:46:22,679 PRINTED TEXT EXTRACTION START
+2023-01-25 20:46:27,225 PRINTED TEXT EXTRACTION END
+2023-01-25 20:46:29,574 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fcc3012e9d0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2023-01-25 20:46:30,064 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fcc088aeee0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2023-01-25 20:46:30,066 CHECKBOX VQA END
+_docs/python/tf/function for  more details.
+[Wed, 25 Jan 2023 20:46:30] WARNING [polymorphic_function.py.called_with_tracing:154] 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fcc088aeee0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[Wed, 25 Jan 2023 20:46:30] INFO [main.py.<module>:59] CHECKBOX VQA END

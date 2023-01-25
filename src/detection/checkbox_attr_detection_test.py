@@ -9,7 +9,7 @@ from pathlib import Path
 warnings.filterwarnings('ignore')
 
 
-class CheckboxDetectionTest:
+class CheckboxAttrDetectionTest:
     # The init method or constructor
     def __init__(self, input_file, output_dir, model_path):
         # Instance Variable
@@ -19,8 +19,8 @@ class CheckboxDetectionTest:
 
     """  checkbox detection """
 
-    def checkbox_detection(self):
-        detection_path = "checkbox_detection"
+    def checkbox_attr_detection(self):
+        detection_path = "checkbox_attr_detection"
         detection_path = os.path.join(self.output_dir, detection_path)
         os.makedirs(detection_path, exist_ok=True)
 
@@ -28,9 +28,7 @@ class CheckboxDetectionTest:
         file_name = Path(self.input_file).stem
         file_extension = Path(self.input_file).suffix
 
-        stripped = file_name.split('_', 1)[0]
-
-        detection_path = os.path.join(detection_path, stripped)
+        detection_path = os.path.join(detection_path, file_name)
         os.makedirs(detection_path, exist_ok=True)
 
         device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
